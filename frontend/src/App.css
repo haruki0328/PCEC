@@ -1,0 +1,270 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav button {
+  background: none;
+  color: var(--accent);
+  padding: 0;
+}
+
+.user-name {
+  color: var(--text-h);
+  font-size: 14px;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.home-page {
+  display: flex;
+  gap: 24px;
+}
+
+.category-filter {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.category-filter ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.category-filter button {
+  background: none;
+  color: var(--text);
+  text-align: left;
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.category-filter button.active {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product-list-area {
+  flex: 1;
+}
+
+.search-input {
+  margin-bottom: 16px;
+  max-width: 400px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  color: var(--text);
+}
+
+.product-card-image-placeholder,
+.product-detail-image-placeholder {
+  background: #eef1f6;
+  color: #8a93a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.product-card-image-placeholder {
+  height: 140px;
+}
+
+.product-detail-image-placeholder {
+  height: 260px;
+  border-radius: 8px;
+}
+
+.product-card-body {
+  padding: 12px;
+}
+
+.product-manufacturer {
+  font-size: 12px;
+  color: #888;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 6px 0;
+}
+
+.in-stock {
+  color: var(--success);
+  font-size: 13px;
+}
+
+.out-of-stock {
+  color: var(--danger);
+  font-size: 13px;
+}
+
+.product-detail {
+  display: flex;
+  gap: 32px;
+}
+
+.product-detail-image-placeholder {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.product-detail-body {
+  flex: 1;
+}
+
+.product-specs {
+  white-space: pre-wrap;
+  background: #f4f4f6;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.add-to-cart-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.add-to-cart-form input {
+  width: 80px;
+}
+
+.success-message {
+  color: var(--success);
+  margin-top: 8px;
+}
+
+.error-message {
+  color: var(--danger);
+  margin-top: 8px;
+}
+
+.auth-page {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-page label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.hint {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.cart-table, .admin-product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.cart-table th, .cart-table td,
+.admin-product-table th, .admin-product-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-total {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin-top: 24px;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin-bottom: 32px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.admin-product-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-product-table button {
+  margin-right: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+}

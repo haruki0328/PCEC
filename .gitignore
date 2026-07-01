@@ -1,0 +1,6 @@
+面談カンペ.md
+.claude/
+.idea/
+backend/target/
+frontend/node_modules/
+frontend/dist/
